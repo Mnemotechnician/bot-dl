@@ -15,7 +15,7 @@ dependencies {
 	
 	implementation("org.tensorflow:libtensorflow:1.15.0")
  	implementation("org.jetbrains.kotlinx:kotlin-deeplearning-api:$dlVersion")
-	implementation("org.jetbrains.kotlinx:kotlin-deeplearning-onnx:$dlVersion")
+	//implementation("org.jetbrains.kotlinx:kotlin-deeplearning-onnx:$dlVersion")
 }
 
 application {
@@ -27,6 +27,7 @@ tasks.jar {
 	
 	manifest {
 		attributes["Main-Class"] = "com.github.mnemotechnician.botdl.AppKt"
+		attributes["Implementation-Version"] = "1.15"
 	}
 	
 	from(*configurations.runtimeClasspath.files.map { if (it.isDirectory()) it else zipTree(it) }.toTypedArray())
