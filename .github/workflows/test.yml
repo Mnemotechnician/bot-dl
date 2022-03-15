@@ -11,7 +11,7 @@ jobs:
 
       - name: compile
         run: |
-          bash gradlew
+          bash gradlew jar
 
       - name: run
         run: |
