@@ -1,0 +1,18 @@
+name: test
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: compile
+        run: |
+          bash gradlew
+
+      - name: run
+        run: |
+          echo "1" | java -jar app/build/libs/app.jar

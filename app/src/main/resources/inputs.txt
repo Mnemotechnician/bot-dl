@@ -1,0 +1,20 @@
+hi->1
+hello->1
+hai->1
+ello->1
+uwu->2
+owo->2
+hewwo->2
+how are you->3
+are you ok->3
+bye->4
+goodbye->4
+you are bad->5
+fuck off->5
+you're bad->5
+amogus->6
+sus->6
+sugoma->6
+say kid amogus backwards->6
+who are you->7
+fuck yourself->8

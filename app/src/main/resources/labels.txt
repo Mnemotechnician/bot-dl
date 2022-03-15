@@ -1,0 +1,8 @@
+1->hi
+2->owo
+3->i'm good
+4->goodbye
+5->no u
+6->sus
+7->i'm a bot
+8->how
