@@ -13,6 +13,7 @@ dependencies {
 	implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	
+	implementation("org.tensorflow:libtensorflow:1.15.0")
  	implementation("org.jetbrains.kotlinx:kotlin-deeplearning-api:$dlVersion")
 	implementation("org.jetbrains.kotlinx:kotlin-deeplearning-onnx:$dlVersion")
 }
