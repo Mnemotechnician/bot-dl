@@ -1,5 +1,6 @@
 package com.github.mnemotechnician.botdl
 
+import java.io.*
 import org.jetbrains.kotlinx.dl.api.core.*
 import org.jetbrains.kotlinx.dl.api.core.activation.*
 import org.jetbrains.kotlinx.dl.api.core.callback.*
@@ -19,7 +20,7 @@ class Learner(
 	var batchSize: Int = 5000
 ) {
 	fun learn() {
-		val (train, test) = PhraseDataset.split(0.8f)
+		val (train, test) = PhraseDataset.split(0.8)
 
 		net.use {
 			it.compile(
@@ -28,15 +29,15 @@ class Learner(
 				metric = Metrics.ACCURACY
 			)
 
-			it.logSummary()
+			//it.logSummary()
 
 			val start = System.currentTimeMillis()
-			it.fit(dataset = train, epochs = EPOCHS, batchSize = TRAINING_BATCH_SIZE)
+			it.fit(dataset = train, epochs = epochs, batchSize = batchSize)
 			println("Training time: ${(System.currentTimeMillis() - start) / 1000f}")
 
-      			it.save(File(PATH_TO_MODEL), writingMode = WritingMode.OVERRIDE)
+      			it.save(File("OUTPUT.dlm"), writingMode = WritingMode.OVERRIDE)
 
-			val accuracy = it.evaluate(dataset = test, batchSize = TEST_BATCH_SIZE).metrics[Metrics.ACCURACY]
+			val accuracy = it.evaluate(dataset = test, batchSize = batchSize).metrics[Metrics.ACCURACY]
 
 			println("Accuracy: $accuracy")
 		}
