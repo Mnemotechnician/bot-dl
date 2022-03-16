@@ -7,7 +7,7 @@ val outputMap = HashMap<Float, String>(500).let { map ->
 	object{}::class.java.getResource("/labels.txt").readText().split('\n').forEach {
 		val sep = it.indexOf("->")
 
-		map.set(it.substring(0, sep).toFloat(), it.substring(sep + 2, it.length - 1))
+		if (sep != -1) map.set(it.substring(0, sep).toFloat(), it.substring(sep + 2, it.length - 1))
 	}
 }
 
@@ -19,6 +19,8 @@ val PhraseDataset = Unit.let {
 
 	data.forEachIndexed { index, entry ->
 		val sep = entry.indexOf("->")
+		if (sep == -1) return@forEachIndexed
+
 		input[index] = entry.substring(0, sep).toDlString()
 		output[index] = entry.substring(sep + 2, entry.length - 1).trim().toFloat()
 	}

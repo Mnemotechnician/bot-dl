@@ -32,3 +32,13 @@ tasks.jar {
 	
 	from(*configurations.runtimeClasspath.files.map { if (it.isDirectory()) it else zipTree(it) }.toTypedArray())
 }
+
+testing {
+    suites {
+        val test by getting(JvmTestSuite::class) {
+            useKotlinTest()
+        }
+    }
+}
+
+
