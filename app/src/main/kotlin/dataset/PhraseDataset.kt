@@ -3,11 +3,11 @@ package com.github.mnemotechnician.botdl.dataset
 import org.jetbrains.kotlinx.dl.dataset.*
 import com.github.mnemotechnician.botdl.*
 
-val outputMap = HashMap<Int, String>(500).let { map ->
+val outputMap = HashMap<Float, String>(500).let { map ->
 	object{}::class.java.getResource("/labels.txt").readText().split('\n').forEach {
 		val sep = it.indexOf("->")
 
-		map.set(it.substring(0, sep).toInt(), it.substring(sep + 2, it.length - 1))
+		map.set(it.substring(0, sep).toFloat(), it.substring(sep + 2, it.length - 1))
 	}
 }
 
