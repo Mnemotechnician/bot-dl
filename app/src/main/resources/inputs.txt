@@ -1,20 +1,47 @@
-hi->1
-hello->1
-hai->1
-ello->1
-uwu->2
-owo->2
-hewwo->2
-how are you->3
-are you ok->3
-bye->4
-goodbye->4
-you are bad->5
-fuck off->5
-you're bad->5
-amogus->6
-sus->6
-sugoma->6
-say kid amogus backwards->6
-who are you->7
-fuck yourself->8
+hi->1.0
+hello->1.0
+hai->1.0
+ello->1.0
+uwu->2.0
+owo->2.0
+hewwo->2.0
+how are you->3.0
+are you ok->3.0
+bye->4.0
+goodbye->4.0
+you are bad->5.0
+fuck off->5.0
+you're bad->5.0
+amogus->6.0
+sus->6.0
+sugoma->6.0
+say kid amogus backwards->6.0
+who are you->7.0
+fuck yourself->8.0
+boulder best->9.0
+boulder love->9.0
+are you alive->10.0
+are you a bot->10.0
+are you sus->11.0
+what is this->12.0
+nuzzles you->2.0
+cocks shotgun->13.0
+where are you->14.0
+what's the matter of life->15.0
+do you eat chairs->10.0
+do you know flarogus->16.0
+sugoma dick->11.0
+do you like rocks?->11.0
+sit here->17.0
+hello children->18.0
+dhjejejwjdideij3iddjjjdnejwjjzjsjdhduud->19.0
+28387388190->19.0
+you are gay->20.0
+your mom->21.0
+don't care + didn't ask + ratio->22.0
+are you scared yet->11.0
+mindustry->23.0
+скат->24.0
+you are cringe->25.0
+do you want to have sex->11.0
+are you mad->10.0

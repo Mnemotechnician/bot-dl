@@ -1,8 +1,25 @@
-1->hi
-2->owo
-3->i'm good
-4->goodbye
-5->no u
-6->sus
-7->i'm a bot
-8->how
+1.0->hi
+2.0->owo
+3.0->i'm good
+4.0->goodbye
+5.0->no u
+6.0->sus
+7.0->i'm a bot
+8.0->how
+9.0->go away
+10.0->yes
+11.0->no
+12.0->cope
+13.0->ohno
+14.0->i'm here
+15.0->there's none
+16.0->yes, he's my friend
+17.0->thank you
+18.0->i'm not a child, what do you mean?
+19.0->what?
+20.0->prove it
+21.0->ok, do you have any better arguments?
+22.0->shut up
+23.0->femboy crawler
+24.0->:place_of_worship:
+25.0->no you

@@ -19,12 +19,13 @@ val PhraseDataset = Unit.let {
 
 	data.forEachIndexed { index, entry ->
 		val sep = entry.indexOf("->")
-		input[index] = entry.substring(0, sep).let { string ->
-			FloatArray(INPUT_LENGTH) { string.getOrNull(it)?.code?.toFloat() ?: 0f }
-		}
+		input[index] = entry.substring(0, sep).toDlString()
 		output[index] = entry.substring(sep + 2, entry.length - 1).trim().toFloat()
 	}
 
 	OnHeapDataset.create(input, output)
 }
 
+fun String.toDlString() = let { string ->
+	FloatArray(INPUT_LENGTH) { string.getOrNull(it)?.code?.toFloat() ?: 0f }
+}
