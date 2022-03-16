@@ -4,7 +4,7 @@ import org.jetbrains.kotlinx.dl.dataset.*
 import com.github.mnemotechnician.botdl.*
 
 val outputMap = HashMap<Int, String>(500).let { map ->
-	object{}::class.java.getResource("labels.txt").readText().split('\n').forEach {
+	object{}::class.java.getResource("/labels.txt").readText().split('\n').forEach {
 		val sep = it.indexOf("->")
 
 		map.set(it.substring(0, sep).toInt(), it.substring(sep + 2, it.length - 1))
@@ -12,7 +12,7 @@ val outputMap = HashMap<Int, String>(500).let { map ->
 }
 
 val PhraseDataset = Unit.let {
-	val data = object {}::class.java.getResource("inputs.txt").readText().split('\n')
+	val data = object {}::class.java.getResource("/inputs.txt").readText().split('\n')
 
 	val input = Array(data.size) { FloatArray(INPUT_LENGTH) { 0f } }
 	val output = FloatArray(data.size) { 0f }
